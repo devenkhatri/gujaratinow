@@ -13,8 +13,8 @@ https://gatsby-v5-wordpress-starter.netlify.app
 
 ## Quick Start
 1. Add below plugins to the wordpress instance
-  - [WPGraphQL](https://wordpress.org/plugins/wp-graphql/)
-  - [WPGatsby](https://wordpress.org/plugins/wp-gatsby/)
+  - [WPGraphQL](https://wordpress.org/plugins/wp-graphql/) — Provides an extendable GraphQL schema and API for any WordPress site.
+  - [WPGatsby](https://wordpress.org/plugins/wp-gatsby/) — Optimizes your WordPress site to work as a data source for Gatsby.
 2. Create .env file with ```WPGRAPHQL_URL=<<wordpress_site_url>>/graphql```
 
 ## Docs 📖

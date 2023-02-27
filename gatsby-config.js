@@ -1,8 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 /**
  * @type {import('gatsby').GatsbyConfig}
@@ -26,7 +24,11 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        url: `https://gujaratinow.com/graphql`,
+        url:
+        // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
+          process.env.WPGRAPHQL_URL ||
+          `https://wpgatsbydemo.wpengine.com/graphql` ||
+          `https://localhost/graphql`,
         schema: {
           typePrefix: `Wordpress`,
         },
