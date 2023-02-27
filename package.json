@@ -1,0 +1,57 @@
+{
+  "name": "gujaratinow",
+  "private": true,
+  "description": "Headless Wordpress with Frontend by Gatsby and Reactjs",
+  "version": "0.1.0",
+  "author": "Deven Goratela <deven.khatri@gmail.com>",
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.3.1",
+    "@emotion/styled": "^10.3.0",
+    "chalk": "^5.2.0",
+    "emotion-theming": "^11.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gatsby": "^5.7.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-google-analytics": "^5.7.0",
+    "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-manifest": "^5.7.0",
+    "gatsby-plugin-postcss": "^6.7.0",
+    "gatsby-plugin-sharp": "^5.7.0",
+    "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-source-graphql": "^5.7.0",
+    "gatsby-transformer-sharp": "^5.7.0",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "isomorphic-fetch": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-extras": "^3.0.0",
+    "react-headroom": "^3.2.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devenkhatri/gujaratinow"
+  },
+  "bugs": {
+    "url": "https://github.com/devenkhatri/gujaratinow/issues"
+  }
+}
