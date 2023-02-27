@@ -1,5 +1,5 @@
 {
-  "name": "gatsby_v5_wordpress_starter",
+  "name": "gujaratinow",
   "private": true,
   "description": "Headless Wordpress with Frontend by Gatsby and Reactjs",
   "version": "0.1.0",
@@ -51,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devenkhatri/gatsby_v5_wordpress_starter"
+    "url": "https://github.com/devenkhatri/gujaratinow"
   },
   "bugs": {
-    "url": "https://github.com/devenkhatri/gatsby_v5_wordpress_starter/issues"
+    "url": "https://github.com/devenkhatri/gujaratinow/issues"
   }
 }
