@@ -8,6 +8,15 @@ Source data from WordPress in a scalable and efficient way with WPGraphQL 🚀
 
 This plugin works by merging the [WPGraphQL schema & data](https://docs.wpgraphql.com/guides/about-wpgraphql/) with the [Gatsby schema & Node model](https://www.gatsbyjs.com/docs/node-model/) which allows us to efficiently cache WP data in Gatsby. What this means is that incremental builds, fast builds, and CMS Previews work beautifully! 💅
 
+## Demo
+https://gatsby-v5-wordpress-starter.netlify.app
+
+## Quick Start
+1. Add below plugins to the wordpress instance
+  - [WPGraphQL](https://wordpress.org/plugins/wp-graphql/)
+  - [WPGatsby](https://wordpress.org/plugins/wp-gatsby/)
+2. Create .env file with ```WPGRAPHQL_URL=<<wordpress_site_url>>/graphql```
+
 ## Docs 📖
 
 - 👩‍🎤 [Why use this plugin?](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/why-use-this-plugin.md)
