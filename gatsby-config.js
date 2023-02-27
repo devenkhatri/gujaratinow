@@ -23,6 +23,28 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        url: `https://gujaratinow.com/graphql`,
+        schema: {
+          typePrefix: `Wordpress`,
+        },
+        develop: {
+          hardCacheMediaFiles: true,
+        },
+        type: {
+          MediaItem: {
+            createFileNodes: false,
+          },
+        },
+        production: {
+          hardCacheMediaFiles: true,
+          allow404Images: true,
+          allow401Images: true,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

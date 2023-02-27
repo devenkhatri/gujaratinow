@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Navbar from "./Navbar"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -20,6 +21,7 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
+    <Navbar />
     <img
       alt="Gatsby logo"
       height={20}
