@@ -7,10 +7,10 @@ require("dotenv").config({
  */
 module.exports = {
   siteMetadata: {
-    title: `GujaratiNow`,
+    title: `Gatsby-v5 Wordpress Starter`,
     description: `Headless Wordpress with Frontend by Gatsby and Reactjs`,
     author: `@devenkhatri`,
-    siteUrl: `https://gujaratinow.netlify.app/`,
+    siteUrl: `https://gatsby-v5-wordpress-starter.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -52,8 +52,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gujaratinow`,
-        short_name: `gujaratinow`,
+        name: `gatsby_v5_wordpress_starter`,
+        short_name: `gatsby_v5_wordpress_starter`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
