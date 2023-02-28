@@ -25,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         url:
-        // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
+          // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
           process.env.WPGRAPHQL_URL ||
           `https://wpgatsbydemo.wpengine.com/graphql` ||
           `https://localhost/graphql`,
@@ -35,9 +35,36 @@ module.exports = {
         develop: {
           hardCacheMediaFiles: true,
         },
+        html: {
+          createStaticFiles: false,
+          useGatsbyImage: false,
+        },
         type: {
           MediaItem: {
             createFileNodes: false,
+            excludeFieldNames: [
+              "contentNodes",
+              "seo",
+              "ancestors",
+              "author",
+              "template",
+              "lastEditedBy",
+              "authorDatabaseId",
+              "authorId",
+              "contentTypeName",
+              "dateGmt",
+              "desiredSlug",
+              "enclosure",
+              "isContentNode",
+              "isTermNode",
+              "modified",
+              "modifiedGmt",
+              "parentDatabaseId",
+              "parentId",
+              "srcSet",
+              "parent",
+              "children"
+            ],
           },
         },
         production: {
